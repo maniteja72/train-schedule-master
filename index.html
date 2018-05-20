@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML TEST D 01</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/main-style.css">
+</head>
+<body>
+	<div id="wrapper">
+		<header id="page_header" class="break-background white-color">
+			<div class="container">
+				<h2 class=" padding-normal no-margin"><i class="fa fa-subway" aria-hidden="true"></i> Train Composition Viewer </h2>
+			</div><!-- end of container -->
+		</header>
+		<section id="welcome-text" class="relative white-color">
+			<div class="overlay-background"></div>
+			<div class="container relative">
+				<header>
+					<h4 class="h1 margin-bottom break-color text-center">Welcome To Train composition Viewer</h4>
+					<div class="content smaller-container">
+						<p>A train is a form of rail transport consisting of a series of vehicles
+							that usually runs along a rail track to transport cargo or passengers.
+							Motive power is provided by a separate locomotive or individual motors in self-propelled multiple units.
+							The Eurail pass, formerly known as "Europass" or "Eurorail pass", is a train pass that allows pass holders to
+							travel in 28 European countries on nearly all European railroads and some shipping lines.
+							The product was launched in 1959 and is owned by a group of European rail carriers and shipping companies.
+						</p>
+					</div>
+				</header>
+			</div><!-- end of container -->
+		</section>
+		<section id="search-box-area" class="sections-padding">
+			<div class="container">
+				<div class="form rounded-corners white-background gray-borders padding-normal margin-top margin-bottom">
+					<div class="form-group">
+						<label class="break-color">Enter your pickup station:</label>
+						<input type="text" id="pickup_station" class="form-control" placeholder="SLO">
+					</div><!-- end of form group -->
+					<div class="form-group text-center">
+						<button id="find-journy-btn" class="btn btn-primary">Find A Journy</button>
+					</div>
+				</div><!-- end of form div -->
+			</div><!-- end of container -->
+		</section>
+		<section id="search-result" class="sections-padding white-background hidden">
+			<div class="container">
+				<div id="search-result-area">
+					<!-- search result -->
+				</div>
+			</div><!-- end of container -->
+		</section>
+		<footer id="page_footer" class="darker-background white-color padding-normal">
+			<div class="container">
+				<div class="copyright text-center">
+					<small>This Work Was done By CHILLA KARTHEEK ARUN SAI RAM</small>
+				</div>
+			</div><!-- end of container -->		
+		</footer>
+	</div><!-- end of wrapper -->
+	<div id="sl_popup-container" class="hidden">
+		<div class="overlay-background"></div>
+			<div class="popup-content padding-normal">
+				<div class="popup-close" title="Close"> <i class="fa fa-times-circle-o" aria-hidden="true"></i> </div>
+				<div class="popup-title break-color h3 margin-bottom"><strong>Journey Details</strong></div>
+				<div class="content small-font">
+					
+				</div>
+			</div><!-- end of popup Content -->
+	</div><!-- end of popup container -->
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/search-algorithm.js"></script>
+</body>
+</html>
